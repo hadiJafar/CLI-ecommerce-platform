@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+This code is a simplified version of how an E-commerce platform such as Amazon.
+This program uses a CLI interface.
 
 ## Getting Started
 
-First, run the development server:
+First, run ECommerceUserInterface.java by:
 
 ```bash
-npm run dev
-# or
-yarn dev
+java ECommerceUserInterface.java
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Commands include:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ADDTOCART
+ - takes custID/prodID/book handling
+ - adds products to cart
+REMCARTITEM
+ - takes CustID and ProdID
+ - removes element from cart
+PRINTCART
+ - custID and prints cart items of a user
+ORDERITEMS
+ - takes custID and sends cart items to order
+STATS
+ - prints frequency of most ordered item to least
+PRINTBYNAME
+ - sorts products by name and can be checked using prods
+PRINTPRICE
+ - sorts products by price
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+RATE
+ - RATE A PRODUCT FROM 1-5 STARS 
+RATINGABOVE
+ - FIND ALL PRODUCTS THAT HAVE A SPECIFIC STAR COUNT OR HIGHER
+PRINTRATING
+ - PRINT THE RATING OF A PRODUCT
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+SORTBYCUSTS
+ - SORTS CUSTOMERS
+BOOKSBYAUTHOR
+ - FINDS ALL BOOKS BY THAT AUTHOR
+PRODS
+ - LISTS ALL PRODUCTS
+BOOKS
+ - LISTS ALL BOOKS
+CUSTS
+ - LISTS ALL CUSTOMERS
+NEWCUST
+ - ADDS CUSTOMER
+ORDER
+ - ADDS ORDER FOR A CUSTOMER
+ORDERBOOK
+ - ORDERS BOOK FOR A CUSTOMER
+CANCEL
+ - CANCELS AN ORDER FOR A CUSTOMER
+CUSTORDERS
+ - LISTS ALL THE ORDERS FOR A SPECIFIC CUSTOMER 
+SHIP
+ - SHIPS THE ORDER TO THE CUSTOMERS
+ORDERS
+ - LISTS ALL THE ORDERS
+SHIPPED
+ - LISTS ALL THE SHIPPED PRODUCTS
